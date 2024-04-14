@@ -54,7 +54,7 @@ export const Hero = (props: HeroProps) => {
               <span>Redução do Apetite</span>{" "}
             </li>
           </ul>
-          <Button className="my-4 w-fit bg-gradient-to-l from-orange-500 to-red-700 px-10 py-2 text-center text-2xl font-medium  uppercase text-white" asChild>
+          <Button className="my-4 w-fit bg-gradient-to-l from-orange-500 to-red-700 px-10 py-6  text-center text-xl font-medium  uppercase text-white" asChild>
             <Link
               href="/#products"
               title="Sim, eu quero um emagrecimento saudável!"
