@@ -1,13 +1,20 @@
+import { Button } from "@/components/ui/button";
+import Image from 'next/image';
+import Link from 'next/link';
+
 interface DepositionsProps {}
 
 export const Depositions = (props: DepositionsProps) => {
   return (
     <section>
-      <div className="mx-auto max-w-7xl space-y-4 px-4 py-6 sm:px-6">
-        <h1 className="text-center text-5xl font-bold">DEPOIMENTOS</h1>
-        <p className="text-center text-2xl">
-          VEJA QUANTO ELAS JÁ EMAGRECERAM COM A AJUDA DE SIBUTRAN 2!
-        </p>
+      <div className="mx-auto flex max-w-7xl flex-col justify-center px-4 py-16 sm:px-6">
+        <div className="flex flex-col items-center justify-center">
+
+        <Image src="/SB2-SITE-IMAGES-3.png" alt="Logo SB2 turbo" width={951} height={120}/>
+        <h1 className="text-center text-2xl font-bold text-primary">
+          CONFIRA OS RESULTADOS DESSA FÓRMULA TRANSFORMADORA!
+        </h1>
+        </div>
         <div className="grid grid-cols-1 flex-col items-center justify-center gap-8 gap-y-4 sm:grid-cols-2 sm:flex-row sm:items-start sm:justify-between md:grid-cols-3">
           <div className="flex flex-col items-center justify-center gap-y-2">
             <iframe
@@ -52,6 +59,7 @@ export const Depositions = (props: DepositionsProps) => {
     >
       <path
         fill='#F61C0D'
+
         d='M365.257 67.393H95.744C42.866 67.393 0 110.259 0 163.137v134.728c0 52.878 42.866 95.744 95.744 95.744h269.513c52.878 0 95.744-42.866 95.744-95.744V163.137c0-52.878-42.866-95.744-95.744-95.744zm-64.751 169.663l-126.06 60.123c-3.359 1.602-7.239-.847-7.239-4.568V168.607c0-3.774 3.982-6.22 7.348-4.514l126.06 63.881c3.748 1.899 3.683 7.274-.109 9.082z'
       ></path>
     </svg>
@@ -98,21 +106,9 @@ export const Depositions = (props: DepositionsProps) => {
               transition: scale(1.2);
             }
             </style>
-            <a href=https://www.youtube.com/embed/JNWwWlIY320?si=W_1PxXMM8r2195FI&autoplay=1>
+            <a href='https://www.youtube.com/embed/JNWwWlIY320?si=W_1PxXMM8r2195FI&autoplay=1' class='bg-white'>
               <img src='https://img.youtube.com/vi/JNWwWlIY320/hqdefault.jpg' alt='YouTube video Veja como o Lift Detox Black é fabricado'>
-              <svg  xmlns='http://www.w3.org/2000/svg'
-      width='68'
-      height='68'
-      fill='#000'
-      version='1.1'
-      viewBox='0 0 461.001 461.001'
-      xmlSpace='preserve'
-    >
-      <path
-        fill='#F61C0D'
-        d='M365.257 67.393H95.744C42.866 67.393 0 110.259 0 163.137v134.728c0 52.878 42.866 95.744 95.744 95.744h269.513c52.878 0 95.744-42.866 95.744-95.744V163.137c0-52.878-42.866-95.744-95.744-95.744zm-64.751 169.663l-126.06 60.123c-3.359 1.602-7.239-.847-7.239-4.568V168.607c0-3.774 3.982-6.22 7.348-4.514l126.06 63.881c3.748 1.899 3.683 7.274-.109 9.082z'
-      ></path>
-    </svg>
+              <div class='icon' style='color: rgb(255, 0, 0); background-color: rgb(255, 255, 255);'><svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 576 512' height='68px' width='68px' xmlns='http://www.w3.org/2000/svg'><path d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'></path></svg></div>
               </a>
               "
               title="YouTube video Veja como o Lift Detox Black é fabricado"
@@ -184,6 +180,13 @@ export const Depositions = (props: DepositionsProps) => {
             />
           </div>
         </div>
+
+        <Button
+          className="text-sm flex w-fit justify-center self-center p-6"
+          asChild
+        >
+          <Link href="#/products">EU TAMBÉM QUERO PERDER PESO</Link>
+        </Button>
       </div>
     </section>
   );
