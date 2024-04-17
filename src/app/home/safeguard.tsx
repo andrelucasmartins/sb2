@@ -10,17 +10,17 @@ export const Safeguard = (props: SafeguardProps) => {
   return (
     <section className="bg-gradient-to-t from-red-950 to-black  text-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center justify-center px-4 md:grid-cols-2 md:gap-16 md:px-0 ">
-        <div className="flex items-end justify-center relative h-[366px]">
+        <div className="relative flex h-[366px] items-end justify-center">
           <Image
             src="/1-4.png"
             alt="Sibutran2"
-            className="mx-auto -top-20  h-[520px] md:h-fit object-cover absolute"
+            className="absolute -top-20  mx-auto h-[520px] object-cover md:h-fit"
             width={774}
             height={619}
           />
         </div>
         <div className="flex flex-col justify-center sm:items-start sm:justify-start">
-          <h2 className=" my-4 line-clamp-3 text-2xl font-bold sm:text-4xl text-center md:text-left">
+          <h2 className=" my-4 line-clamp-3 text-center text-2xl font-bold sm:text-4xl md:text-left">
             EXPERIMENTE SEM
             <br />
             <span className="font-extrabold">COMPROMISSO POR 30 DIAS</span>
