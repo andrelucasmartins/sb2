@@ -8,20 +8,19 @@ interface SafeBuyProps {}
 
 export const SafeBuy = (props: SafeBuyProps) => {
   return (
-    <section>
-      <div className="mx-auto max-w-7xl space-y-16 px-4 py-16 sm:px-6">
+    <section className="bg-secondary">
+      <div className="mx-auto max-w-7xl space-y-6 px-4 py-16 sm:px-6 ">
         <h1 className="text-center text-5xl font-bold text-black">
-          Comprar <span className="uppercase text-primary">SIBUTRAN 2</span> é
-          Seguro?
+          ComprarSB2 é Seguro?
         </h1>
         <p className="text-center text-lg">
           Nós garantimos a segurança da sua compra durante todo o processo, do
           início à finalização e ao pós venda, assegurando todos os mais
           modernos protocolos de cyber segurança assim como boas práticas de
-          venda.{" "}
+          venda.
         </p>
-        <div className="grid grid-cols-1 flex-col items-center justify-center gap-y-4 sm:grid-cols-2 sm:flex-row sm:items-start sm:justify-between md:grid-cols-4">
-          <div className="flex flex-col items-center justify-center gap-y-2 text-center">
+        <div className="grid grid-cols-1 flex-col items-center justify-center gap-y-4 font-bold sm:grid-cols-2 sm:flex-row sm:items-start sm:justify-between md:grid-cols-4">
+          <div className="flex flex-col items-center justify-center gap-y-2 text-center ">
             <FaUserLock className="size-16 text-primary" />
             <p>Dados pessoais sigilosos não são compartilhados</p>
           </div>
@@ -35,7 +34,7 @@ export const SafeBuy = (props: SafeBuyProps) => {
           </div>
           <div className="flex flex-col items-center justify-center gap-y-2 text-center">
             <FaTruck className="size-16 text-primary" />
-            <p>Entrega expressa e política de devolução moderna </p>
+            <p>Entrega expressa e política de devolução moderna</p>
           </div>
         </div>
       </div>

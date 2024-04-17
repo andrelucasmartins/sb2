@@ -32,7 +32,7 @@ export const Support = (props: SupportProps) => {
            <Link
              type="button"
              className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded  px-4 py-2 text-center  mb-2 flex flex-row gap-2 w-[210px] uppercase items-center justify-center text-lg"
-             href="https://api.whatsapp.com/send?phone=5519993028888&text=Olá, sou André, gostaria de saber mais sobre o Sibutran2?"
+             href="https://api.whatsapp.com/send?phone=5519993028888&text=Olá, sou André, gostaria de saber mais sobre o SB2 Turbo?"
            >
              clique aqui
            </Link>

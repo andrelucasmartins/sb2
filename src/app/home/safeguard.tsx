@@ -1,7 +1,6 @@
 "use client";
 
-import { Modal } from "@/components/modal";
-import { ASSURANCE } from '@/data/assurance';
+import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from "next/link";
 
@@ -9,51 +8,40 @@ interface SafeguardProps {}
 
 export const Safeguard = (props: SafeguardProps) => {
   return (
-    <section className="bg-primary  text-white">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-center items-center md:py-6 md:gap-16 px-4">
-        <div className="flex justify-center items-center">
+    <section className="bg-gradient-to-t from-red-950 to-black  text-white">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center justify-center px-4 md:grid-cols-2 md:gap-16 md:px-0 ">
+        <div className="flex items-end justify-center relative h-[366px]">
           <Image
-            src="/5-2.png"
+            src="/1-4.png"
             alt="Sibutran2"
-            className="w-full md:my-6 object-cover mx-auto"
-            width={640}
-            height={640}
+            className="mx-auto -top-20  h-[520px] md:h-fit object-cover absolute"
+            width={774}
+            height={619}
           />
         </div>
-        <div className="flex-col justify-center sm:justify-start sm:items-start flex">
-          <h1 className="text-primary text-4xl/10 font-bold  sm:visible invisible text-start sr-only">
-            O melhor redutor de medidas!
-          </h1>
-          <p className=" text-2xl sm:text-3xl font-bold my-4 line-clamp-3">
-            EMAGRECIMENTO COMPROVADO!
-            <br /> Ou devolva em até 30 dias
-          </p>
+        <div className="flex flex-col justify-center sm:items-start sm:justify-start">
+          <h2 className=" my-4 line-clamp-3 text-2xl font-bold sm:text-4xl text-center md:text-left">
+            EXPERIMENTE SEM
+            <br />
+            <span className="font-extrabold">COMPROMISSO POR 30 DIAS</span>
+          </h2>
 
-          <p className="text-md my-4 font-normal flex flex-col gap-y-4">
-            <span>
-              É isso mesmo que você leu! Ou você tem tem o resultado desejado,
-              ou compramos o Sibutran 2 de volta de você! Simples assim!
-            </span>
-            <span>
-              Fazemos isso porque temos certeza que Sibutran 2 vai cumprir o seu
-              papel e por isso nosso compromisso com você é uma garantia de até
-              30 dias.
-            </span>
-            <span>
-              Para qualquer dúvida, consulte as condições e regulamento.{" "}
-              <Modal.UseTerms list={ASSURANCE} title="Garantia" id="assuranceId">
-                <Modal.ButtonAction id="assuranceId">Clique aqui</Modal.ButtonAction>
-              </Modal.UseTerms>
-            </span>
+          <p className="text-md my-4 gap-y-4 font-normal">
+            Você pode adquirir o SB2 por até 30 dias e experimentar com RISCO
+            ZERO, caso não tiver o seu resultado nas primeiras semanas, o seu
+            dinheiro será 100% devolvido, basta enviar um e-mail.
           </p>
-
-          <Link
-            className="my-4 text-white bg-gradient-to-bl from-emerald-500 to-emerald-700 hover:bg-emerald-400 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full sm:rounded  px-10 py-5 text-center   w-fit text-2xl mx-auto"
-            href="products"
-            title="Sim, eu quero um emagrecimento saudável!"
+          <Button
+            asChild
+            className="text-md mx-auto my-4 w-fit bg-gradient-to-bl from-secondary to-secondary px-10 py-3 text-center font-medium  text-red-800 hover:text-black "
           >
-            Sim, eu quero aproveitar!
-          </Link>
+            <Link
+              href="/#products"
+              title="Sim, eu quero um emagrecimento saudável!"
+            >
+              EXPERIMENTAR SEM RISCO
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

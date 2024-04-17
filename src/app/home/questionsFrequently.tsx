@@ -3,58 +3,54 @@
 import { QUESTIONS } from "@/data/questions";
 
 
+
+
+
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger
+} from "@/components/ui/collapsible";
+import { FaSquareFull } from "react-icons/fa6";
 
 interface QuestionsFrequentlyProps {}
 
 
 export const QuestionsFrequently = (props: QuestionsFrequentlyProps) => {
   return (
-    <section className="bg-primary text-white py-16">
-      <div className="mx-auto max-w-7xl space-y-6">
-        <h1 className="text-center text-6xl md:text-4xl font-bold">PERGUNTAS FREQUENTES</h1>
-        <p className="text-center text-xl px-2">
-          Veja aqui as principais dúvidas sobre o Sibutran 2{" "}
+    <section className="py-16 bg-secondary">
+      <div className="mx-auto max-w-7xl space-y-6 px-4 sm:px-0">
+        <p className="text-md px-2 text-center text-primary">
+          ALGUMA DÚVIDA? VEJA ABAIXO OU NOS MANDE UMA MENSAGEM!
         </p>
-
-        <Accordion type="single" collapsible className="w-full">
+        <h1 className="text-center  text-4xl font-bold">
+          Dúvidas Frequentes:
+        </h1>
+        <div className="grid w-full grid-cols-1 md:grid-cols-2 items-start gap-4">
           {QUESTIONS?.map((question) => (
-            <AccordionItem
-              className="hover:bg-transparent "
-              key={question.id}
-              value={`item-${question.id}`}
-            >
-              <AccordionTrigger className="transition ease-in-out delay-150  text-white hover:bg-transparent bg-transparent focus:ring-0">
-                {question.question}
-              </AccordionTrigger>
-              <AccordionContent>
-                <p className="mb-2 text-white">{question.answer}</p>
-              </AccordionContent>
-            </AccordionItem>
+            <Collapsible key={question.id}>
+              <CollapsibleTrigger
+                asChild
+                className="flex items-center justify-between rounded-b-md bg-primary p-4"
+              >
+                <div>
+                  <h4 className="text-sm font-semibold text-white">
+                    {question.question}
+                  </h4>
+                  <div>
+                    <FaSquareFull className="size-3 text-white" />
+                    <span className="sr-only">Toggle</span>
+                  </div>
+                </div>
+              </CollapsibleTrigger>
+            <CollapsibleContent className="mx-4 space-y-2 has-[data-state=open]:animate-accordion-down has-[data-state=closed]:animate-accordion-up">
+                <div className="rounded-ee-md border bg-white px-4 py-3 font-mono text-sm ">
+                  {question.answer}
+                </div>
+              </CollapsibleContent>
+            </Collapsible>
           ))}
-        </Accordion>
-
-        {/* <Accordion className="text-white border-0  ">
-          {QUESTIONS?.map((question) => (
-            <Accordion.Panel
-              className="hover:bg-transparent "
-              key={question.id}
-            >
-              <Accordion.Title className="transition ease-in-out delay-150  text-white hover:bg-transparent bg-transparent focus:ring-0">
-                {question.question}
-              </Accordion.Title>
-
-              <Accordion.Content>
-                <p className="mb-2 text-white">{question.answer}</p>
-              </Accordion.Content>
-            </Accordion.Panel>
-          ))}
-        </Accordion> */}
+        </div>
       </div>
     </section>
   );

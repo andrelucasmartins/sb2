@@ -185,7 +185,7 @@ export const Depositions = (props: DepositionsProps) => {
           className="text-sm flex w-fit justify-center self-center p-6"
           asChild
         >
-          <Link href="#/products">EU TAMBÉM QUERO PERDER PESO</Link>
+          <Link href="/#products">EU TAMBÉM QUERO PERDER PESO</Link>
         </Button>
       </div>
     </section>
