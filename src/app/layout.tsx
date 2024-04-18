@@ -9,9 +9,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sibutran 2 - Monetizze - Sibutran 2 Cápsulas | AE Digi Solutions",
+  title: "SB2 - Você em forma naturalmente - Monetizze - SB2 Turbo - Emagreça de forma Prática e natural ",
   description:
-    "Mais do que um potente emagrecedor, Sibutran 2 é o auxiliador da sua saúde.",
+    "Mais do que um potente emagrecedor, SB2 é o auxiliador da sua saúde.",
   verification: {
     google: "psTI9M2KFhTJ2Yghx7YsQOQHx1tjLH-pSnqXDpibn8M",
   },
