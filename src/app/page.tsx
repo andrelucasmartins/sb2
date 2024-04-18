@@ -1,3 +1,5 @@
+import { Footer } from "@/components/footer";
+import { TermsModalContextProvider } from "@/contexts/TermsContext";
 import { Benefits } from "./home/benefits";
 import { CaseSuccess } from "./home/caseSuccess";
 import { Depositions } from "./home/depositions";
@@ -21,6 +23,9 @@ export default function Home() {
       <Safeguard />
       <SafeBuy />
       <QuestionsFrequently />
+      <TermsModalContextProvider>
+        <Footer />
+      </TermsModalContextProvider>
     </main>
   );
 }

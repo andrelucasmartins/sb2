@@ -1,7 +1,5 @@
-import { Footer } from "@/components/footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { NavbarMain } from "@/components/navbarMain";
-import { TermsModalContextProvider } from "@/contexts/TermsContext";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -38,9 +36,7 @@ export default function RootLayout({
         <NavbarMain />
         </div>
         {children}
-        <TermsModalContextProvider>
-          <Footer />
-        </TermsModalContextProvider>
+        
       </body>
     </html>
   );
