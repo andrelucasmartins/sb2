@@ -5,9 +5,11 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
-interface HeroProps {}
+interface HeroProps {
+  url?: string
+}
 
-export const Hero = (props: HeroProps) => {
+export const Hero = ({ url = "#products" }:HeroProps) => {
   return (
     <section className="bg-black text-white">
       <div className=" flex h-min  w-full flex-col gap-y-6 bg-[url('/QUER-EMAGRECER-sibutran2-1024x636-1.png')] bg-cover bg-no-repeat px-4 py-6">
@@ -93,7 +95,7 @@ export const Hero = (props: HeroProps) => {
           asChild
         >
           <Link
-            href="/#products"
+            href={`/${url}`}
             title="Sim, eu quero um emagrecimento saudável!"
           >
             Eu quero um emagrecimento saudável

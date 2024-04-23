@@ -6,14 +6,18 @@ interface DepositionsProps {}
 
 export const Depositions = (props: DepositionsProps) => {
   return (
-    <section>
+    <section id="depoimentos">
       <div className="mx-auto flex max-w-7xl flex-col justify-center px-4 py-16 sm:px-6">
         <div className="flex flex-col items-center justify-center">
-
-        <Image src="/SB2-SITE-IMAGES-3.png" alt="Logo SB2 turbo" width={951} height={120}/>
-        <h1 className="text-center text-2xl font-bold text-primary">
-          CONFIRA OS RESULTADOS DESSA FÓRMULA TRANSFORMADORA!
-        </h1>
+          <Image
+            src="/SB2-SITE-IMAGES-3.png"
+            alt="Logo SB2 turbo"
+            width={951}
+            height={120}
+          />
+          <h1 className="text-center text-2xl font-bold text-primary">
+            CONFIRA OS RESULTADOS DESSA FÓRMULA TRANSFORMADORA!
+          </h1>
         </div>
         <div className="grid grid-cols-1 flex-col items-center justify-center gap-8 gap-y-4 sm:grid-cols-2 sm:flex-row sm:items-start sm:justify-between md:grid-cols-3">
           <div className="flex flex-col items-center justify-center gap-y-2">
@@ -182,7 +186,7 @@ export const Depositions = (props: DepositionsProps) => {
         </div>
 
         <Button
-          className="text-sm flex w-fit justify-center self-center p-6"
+          className="flex w-fit justify-center self-center p-6 text-sm"
           asChild
         >
           <Link href="/#products">EU TAMBÉM QUERO PERDER PESO</Link>

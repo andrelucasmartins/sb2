@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="scroll-smooth transition duration-150 ease-in-out"
+      className="scroll-smooth"
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
