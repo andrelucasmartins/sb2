@@ -86,12 +86,11 @@ export const Hero = ({ url = "#products" }:HeroProps) => {
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           loading="lazy"
-          className="left-0 top-0 mx-auto mt-4 flex aspect-square h-96 justify-center rounded-md border-0 border-secondary text-center sm:max-w-3xl md:aspect-video
+          className="left-0 top-0 mx-auto mt-4 flex aspect-square h-96 justify-center rounded-md border-0 border-secondary text-center sm:max-w-2xl md:aspect-video
           "
         />
-
         <Button
-          className="my-4 w-fit bg-gradient-to-l from-orange-500 to-red-700 px-10 py-6  text-center text-xl font-medium  uppercase text-white mx-auto"
+          className="mx-auto my-4 w-fit bg-gradient-to-l from-orange-500 to-red-700 px-10  py-6 text-center text-xl  font-medium uppercase text-white"
           asChild
         >
           <Link
