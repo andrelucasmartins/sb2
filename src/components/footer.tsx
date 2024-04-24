@@ -123,12 +123,24 @@ export function Footer(props: FooterProps) {
           </div>
         </div>
 
-        <div className="mx-auto max-w-7xl bg-gray-950 px-4 py-6 md:flex md:items-center md:justify-center ">
-          <span className="text-center text-sm text-gray-200 dark:text-gray-300">
-            © {new Date().getFullYear()}{" "}
-            <a href="https://aedigi.com.br">AE Digi Solutions™</a>. Todos os
-            direitos reservados.
-          </span>
+        <div className="mx-auto max-w-7xl flex-col gap-4 bg-gray-950 px-4 py-6 text-gray-200 dark:text-gray-300 md:flex md:items-center md:justify-center">
+          <p className="text-center text-sm ">
+            Copyright{' '}
+            <a href="https://aedigi.com.br">&copy;AE Digi Solutions</a>. Todos
+            os direitos reservados.
+          </p>
+          <p className="text-xs text-gray-500">
+            Todo o conteúdo do site, todas as fotos, imagens, logotipos, marcas,
+            layout, aqui veículados são de propriedade exclusiva. É vedada
+            qualquer reprodução, total ou parcial, de qualquer elemento de
+            identidade, sem expressa autorização. A violação de qualquer direito
+            mencionado implicará na responsabilização cível e criminal nos
+            termos da Lei. Todas as imagens do site são meramente ilustrativas.
+            Atenção: SB2 não é medicamento e não contém o fármaco sibutramina e
+            nenhum outro fármaco em sua composição. SB2 é um suplemento 100%
+            natural. Os preços dos produtos estão sujeitos a alteração sem aviso
+            prévio.
+          </p>
         </div>
       </div>
       <Link
