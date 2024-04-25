@@ -19,8 +19,8 @@ export const Depositions = (props: DepositionsProps) => {
             CONFIRA OS RESULTADOS DESSA FÓRMULA TRANSFORMADORA!
           </h1>
         </div>
-        <div className="grid grid-cols-1 flex-col items-center justify-center gap-8 gap-y-4 sm:grid-cols-2 sm:flex-row sm:items-start sm:justify-between md:grid-cols-3">
-          <div className="flex flex-col items-center justify-center gap-y-2">
+        <div className="grid grid-cols-1 flex-col items-center justify-center sm:gap-8 sm:gap-y-4 sm:grid-cols-2 sm:flex-row sm:items-start sm:justify-between md:grid-cols-3">
+          <div className="flex flex-col items-center justify-center">
             <iframe
               src="https://www.youtube.com/embed/rVLHl50xdws?si=W_1PxXMM8r2195FI&autoplay=1"
               srcDoc="
@@ -79,7 +79,7 @@ export const Depositions = (props: DepositionsProps) => {
           "
             />
           </div>
-          <div className="flex flex-col items-center justify-center gap-y-2">
+          <div className="flex flex-col items-center justify-center">
             <iframe
               src="https://www.youtube.com/embed/JNWwWlIY320?si=W_1PxXMM8r2195FI&autoplay=1"
               srcDoc="

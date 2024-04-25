@@ -90,7 +90,7 @@ export const Hero = ({ url = "#products" }:HeroProps) => {
           "
         />
         <Button
-          className="mx-auto my-4 w-fit bg-gradient-to-l from-orange-500 to-red-700 px-10  py-6 text-center text-xl  font-medium uppercase text-white"
+          className="mx-auto my-4 w-fit bg-gradient-to-l from-orange-500 to-red-700 px-10  py-6 text-center sm:text-xl  font-medium uppercase text-white"
           asChild
         >
           <Link
