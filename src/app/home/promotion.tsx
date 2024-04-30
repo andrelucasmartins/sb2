@@ -18,7 +18,7 @@ export const Promotion = (props: PromotionProps) => {
 
            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
              <span className="block">Aproveite os descontos da </span>
-             <span className="block drop-shadow-md drop-shadow-primary">promoção especial hoje!</span>
+             <span className="block drop-shadow-md drop">promoção especial hoje!</span>
            </h2>
            <p className="mt-4 text-lg leading-6 text-white">
              Estes descontos não durarão para sempre

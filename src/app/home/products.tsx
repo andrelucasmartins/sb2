@@ -66,66 +66,72 @@ export const Products = (props: ProductsProps) => {
                   </div>
                 </Link>
               </Card>
-              <Card
+              <Link
                 key={product.id}
-                className="sm:flex flex-col items-center rounded-3xl bg-red-700 bg-gradient-to-t from-red-950 text-white hidden md:justify-center"
+                onClick={() => window.open(product.url)}
+                href={`#${product.units}`}
               >
-                <div className="sr-only min-w-full bg-green-600 py-2 text-center font-semibold uppercase text-white">
-                  {product.desc}
-                </div>
-                <Badge className="sm:text-md mx-auto flex w-full items-center justify-center rounded-full bg-black text-xs text-white">
-                  {product.label}
-                </Badge>
-                <a
-                  href={product.url}
-                  className="-mb-4 text-center text-xl  font-semibold tracking-tight dark:text-white"
-                >
-                  <span className="text-xl font-bold">{product.units}</span>
-                </a>
-                <div className="flex flex-col items-center">
-                  <a href={product.url}>
-                    <Image
-                      src={product.img}
-                      alt={`Sibutra2 ${product.units}`}
-                      width={350}
-                      height={350}
-                    />
-                  </a>
-                  <span className="ml-3 mr-2 rounded  px-2.5 py-0.5 text-xs font-semibold  dark:bg-red-200 dark:text-red-800">
-                    <p className="text-sm">
-                      de{" "}
-                      <span className="line-through">
-                        R$ {product.fromPrice}
-                      </span>{" "}
-                      por
-                    </p>
-                  </span>
-                </div>
-                <div className="flex flex-col items-center justify-center space-y-2">
-                  <span className="flex flex-row  items-end gap-x-1 text-3xl font-bold">
-                    <div className="flex flex-col items-end justify-center text-xs">
-                      <span>12X</span>
-                      <span className="text-xl">R$</span>
-                    </div>
-                    <div>{product.parc}</div>
-                  </span>
-                  <p className="text-sm">
-                    <span>R$ {product.price} à vista</span>
-                  </p>
+                <Card className="hidden flex-col items-center rounded-3xl bg-red-700 bg-gradient-to-t from-red-950 text-white sm:flex md:justify-center">
+                  <div className="sr-only min-w-full bg-green-600 py-2 text-center font-semibold uppercase text-white">
+                    {product.desc}
+                  </div>
+                  <div className="w-full p-3">
+                    <Badge className="sm:text-md mx-auto flex items-center justify-center rounded-full bg-black text-xs text-white ">
+                      {product.label}
+                    </Badge>
+                  </div>
+
                   <a
-                    className="rounded-full bg-green-600 px-5 py-2.5 text-center text-xs font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-                    href={product.url}
+                    href={`#${product.units}`}
+                    className="-mb-4 text-center text-xl  font-semibold tracking-tight dark:text-white"
                   >
-                    <p>COMPRAR SB2</p>
+                    <span className="text-xl font-bold">{product.units}</span>
                   </a>
-                  <Image
-                    src="/frete_gratis.png"
-                    width={300}
-                    height={300}
-                    alt="frete"
-                  />
-                </div>
-              </Card>
+                  <div className="flex flex-col items-center">
+                    <a href={`#${product.units}`}>
+                      <Image
+                        src={product.img}
+                        alt={`Sibutra2 ${product.units}`}
+                        width={350}
+                        height={350}
+                      />
+                    </a>
+                    <span className="ml-3 mr-2 rounded  px-2.5 py-0.5 text-xs font-semibold  dark:bg-red-200 dark:text-red-800">
+                      <p className="text-sm">
+                        de{" "}
+                        <span className="line-through">
+                          R$ {product.fromPrice}
+                        </span>{" "}
+                        por
+                      </p>
+                    </span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center space-y-2">
+                    <span className="flex flex-row  items-end gap-x-1 text-3xl font-bold">
+                      <div className="flex flex-col items-end justify-center text-xs">
+                        <span>12X</span>
+                        <span className="text-xl">R$</span>
+                      </div>
+                      <div>{product.parc}</div>
+                    </span>
+                    <p className="text-sm">
+                      <span>R$ {product.price} à vista</span>
+                    </p>
+                    <a
+                      className="rounded-full bg-green-600 px-5 py-2.5 text-center text-xs font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                      href={`/#${product.units}`}
+                    >
+                      <p>COMPRAR SB2</p>
+                    </a>
+                    <Image
+                      src="/frete_gratis.png"
+                      width={300}
+                      height={300}
+                      alt="frete"
+                    />
+                  </div>
+                </Card>
+              </Link>
             </>
           ))}
         </div>
