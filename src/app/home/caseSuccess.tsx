@@ -106,7 +106,7 @@ export const CaseSuccess = (props: CaseSuccessProps) => {
             </div>
           </div>
           <div className="from-white h-[994px]   bg-gradient-to-t  bg-repeat">
-            <div className="h-full bg-[url(/fundo-secao.webp)] bg-cover bg-repeat ">
+            <div className="h-full bg-[url(/fundo-secao.avif)] bg-cover bg-repeat ">
               <div className="mx-auto flex h-full  max-w-7xl place-content-center justify-end px-4 sm:px-6 bg-gray-950/50 md:bg-transparent">
                 <div className=" mt-24 flex max-w-3xl flex-col place-content-center items-end   space-y-4 px-4 text-white md:text-black sm:px-6 ">
                   <h1 className="text-3xl font-bold tracking-tight  sm:text-4xl">
