@@ -5,7 +5,7 @@ interface PromotionProps {
 
 export const Promotion = (props: PromotionProps) => {
  return (
-   <section className="bg-[url('/promotion.bmp')] bg-cover bg-center bg-no-repeat bg-blend-multiply bg-black/50">
+   <section className="bg-[url('/promotion.avif')] bg-cover bg-center bg-no-repeat bg-blend-multiply bg-black/50">
      <div className="mx-auto max-w-7xl px-4 sm:px-6">
        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
          <div className="space-y-4 text-center">

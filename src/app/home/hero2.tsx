@@ -22,7 +22,7 @@ export const Hero2 = (props: HeroProps) => {
             className="hidden md:block"
           />
           <Image
-            src="/SB2-SITE-IMAGES-420-x-420-px.png"
+            src="/SB2-SITE-IMAGES-420-x-420-px.avif"
             alt="Logo SB2 turbo"
             width={420}
             height={420}
