@@ -19,10 +19,10 @@ export const CaseSuccess = (props: CaseSuccessProps) => {
   return (
     <>
       <section className="bg-[url(/bg_black-1.jpg)] bg-center bg-repeat pt-16 text-white">
-        <div className="bg-[#313131]">
+        <div className="bg-gray-950">
           <div className="mx-auto max-w-7xl space-y-6 px-4 sm:px-6">
             <h1 className="py-6  text-center text-4xl font-bold">
-              MAIS DE <span className="text-primary">54.798</span> VIDAS
+              MAIS DE <span className="text-red-600">54.798</span> VIDAS
               TRANSFORMADAS
             </h1>
 

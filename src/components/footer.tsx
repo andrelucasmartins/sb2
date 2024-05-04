@@ -12,7 +12,7 @@ import { FaExpeditedssl, FaWhatsapp } from "react-icons/fa6";
 
 export function Footer(props: FooterProps) {
   return (
-    <footer className=" bg-gray-950 ">
+    <footer className=" bg-black ">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="xs:grid-cols-2 grid gap-8 px-4 py-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:py-8">
           <div>
@@ -23,7 +23,7 @@ export function Footer(props: FooterProps) {
               <li className="mb-4">
                 <p className="flex flex-col font-thin">
                   <span className="font-medium">Fale conosco pelo e-mail:</span>
-                  sac@paulonutra.com.br <br />
+                  sac@qgpowersuplementos.com.br <br />
                   ou telefone: (19) 99302-8888
                 </p>
               </li>
@@ -129,7 +129,7 @@ export function Footer(props: FooterProps) {
           </div>
         </div>
 
-        <div className="mx-auto max-w-7xl flex-col gap-4 bg-gray-950 px-4 py-6 text-gray-200 dark:text-gray-300 md:flex md:items-center md:justify-center">
+        <div className="mx-auto max-w-7xl flex-col gap-4  px-4 py-6 text-gray-200 dark:text-gray-300 md:flex md:items-center md:justify-center">
           <p className="text-center text-sm ">
             Copyright{" "}
             <a href="https://aedigi.com.br">&copy;AE Digi Solutions</a>. Todos

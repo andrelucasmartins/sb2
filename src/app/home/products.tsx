@@ -17,7 +17,12 @@ export const Products = (props: ProductsProps) => {
         <div className="mb-16 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {PRODUCTS.map((product) => (
             <Fragment key={product.id}>
-              <Link href={product.url} target="_blank" className="sm:hidden">
+              <Link
+                href={product.url}
+                target="_blank"
+                className="sm:hidden"
+                title={`${product.label.trim()}`}
+              >
                 <Card className="block border-0 py-2 drop-shadow-xl">
                   <div className="grid grid-cols-2">
                     <div className="size-40">
@@ -64,7 +69,11 @@ export const Products = (props: ProductsProps) => {
                 </Card>
               </Link>
 
-              <Link target="_blank" href={product.url} className="">
+              <Link
+                target="_blank"
+                href={product.url}
+                title={`${product.label.trim()}`}
+              >
                 <Card className="hidden flex-col items-center rounded-3xl bg-red-700 bg-gradient-to-t from-red-950 text-white sm:flex md:justify-center">
                   <CardContent>
                     <div className="sr-only min-w-full bg-green-600 py-2 text-center font-semibold uppercase text-white">
