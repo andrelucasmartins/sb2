@@ -118,9 +118,9 @@ export const Products = (props: ProductsProps) => {
                       <p className="text-sm">
                         <span>R$ {product.price} à vista</span>
                       </p>
-                      <div className="rounded-full bg-green-600 px-5 py-2.5 text-center text-xs font-medium text-white hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                      <Button className="rounded-full bg-gradient-to-t from-green-600 to-green-700 px-5 py-2.5 text-center text-xs font-bold text-white hover:bg-green-800">
                         COMPRAR SB2
-                      </div>
+                      </Button>
                       <Image
                         src="/frete_gratis.png"
                         width={300}
