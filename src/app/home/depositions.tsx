@@ -186,7 +186,7 @@ export const Depositions = (props: DepositionsProps) => {
         </div>
 
         <Button
-          className="flex w-fit justify-center self-center p-6 text-sm bg-red-600 hover:bg-red-700"
+          className="flex w-fit justify-center self-center p-6 text-sm bg-gradient-to-t from-red-700 to-red-900 hover:opacity-80 font-bold"
           asChild
         >
           <Link href="/#products">EU TAMBÉM QUERO PERDER PESO</Link>

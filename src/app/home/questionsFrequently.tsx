@@ -34,9 +34,9 @@ export const QuestionsFrequently = (props: QuestionsFrequentlyProps) => {
                 className="flex items-center justify-between rounded-b-md bg-primary p-4"
               >
                 <div>
-                  <h4 className="text-sm font-semibold text-white">
+                  <h2 className="text-sm font-semibold text-white">
                     {question.question}
-                  </h4>
+                  </h2>
                   <div>
                     <FaSquareFull className="size-3 text-white" />
                     <span className="sr-only">Toggle</span>

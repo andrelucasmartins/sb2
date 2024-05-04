@@ -9,9 +9,9 @@ export const Promotion = (props: PromotionProps) => {
      <div className="mx-auto max-w-7xl px-4 sm:px-6">
        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
          <div className="space-y-4 text-center">
-           <h1 className="text-xl font-bold tracking-tight text-primary sm:text-2xl">
+           <h1 className="text-xl font-bold tracking-tight text-red-600 sm:text-2xl">
              <span className="block">PRONTA PARA TOMAR </span>
-             <span className="block text-primary">
+             <span className="block">
                A MELHOR DECISÃO PARA SUA SAÚDE?
              </span>
            </h1>

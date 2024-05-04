@@ -19,17 +19,21 @@ export function Footer(props: FooterProps) {
             <h2 className="mb-6 text-sm font-semibold uppercase text-gray-100 dark:text-white">
               Contato
             </h2>
-            <ul className="text-xs font-medium text-gray-100">
+            <ul className="text-xs font-medium text-gray-300">
               <li className="mb-4">
-                <p className="flex flex-col font-thin">
-                  <span className="font-medium">Fale conosco pelo e-mail:</span>
+                <p className="flex flex-col">
+                  <span className="font-medium text-gray-50">
+                    Fale conosco pelo e-mail:
+                  </span>
                   sac@qgpowersuplementos.com.br <br />
                   ou telefone: (19) 99302-8888
                 </p>
               </li>
               <li className="mb-4">
-                <p className="flex flex-col font-thin">
-                  <span className="font-medium">Horário de atendimento:</span>
+                <p className="flex flex-col">
+                  <span className="text-gray-50 font-medium">
+                    Horário de atendimento:
+                  </span>
                   Segunda à Sexta-feira das 8h às 18hrs
                 </p>
               </li>
@@ -43,7 +47,7 @@ export function Footer(props: FooterProps) {
               <li className="mb-4">
                 <Link
                   type="button"
-                  className="mb-2 flex w-[210px] flex-row items-center justify-center gap-2 rounded bg-gradient-to-r from-green-400 via-green-500 to-green-600  px-4 py-2 text-center  text-lg font-medium uppercase text-white hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-green-300 dark:focus:ring-green-800"
+                  className="mb-2 flex w-[210px] flex-row items-center justify-center gap-2 rounded bg-gradient-to-r from-green-400 via-green-500 to-green-300  px-4 py-2 text-center  text-lg font-medium uppercase text-white hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-green-300 dark:focus:ring-green-800"
                   onClick={() =>
                     window.open(
                       "https://api.whatsapp.com/send?phone=5519993028888&text=Olá, sou você, gostaria de saber mais sobre o SB2 Turbo?",
@@ -56,10 +60,10 @@ export function Footer(props: FooterProps) {
                 </Link>
               </li>
 
-              <li className="mb-4 sr-only">
+              <li className="sr-only mb-4">
                 <a
                   href="#"
-                  className="rounded-sm bg-gray-600 px-6 py-2 text-sm uppercase text-gray-100 ring-1 ring-gray-500 hover:cursor-default hover:underline"
+                  className="rounded-sm bg-gray-300 px-6 py-2 text-sm uppercase text-gray-100 ring-1 ring-gray-500 hover:cursor-default hover:underline"
                 >
                   entre em contato
                 </a>
@@ -100,7 +104,7 @@ export function Footer(props: FooterProps) {
                   <li className="mb-2">
                     <button
                       type="button"
-                      className="flex w-[214px] items-center gap-2 bg-gray-600 px-8 py-1 text-base uppercase text-gray-300"
+                      className="flex w-[214px] items-center gap-2 bg-gray-600 px-8 py-1 text-base uppercase text-gray-50"
                     >
                       <FaExpeditedssl size={20} />
                       <span className="text-xs"> Ambiente Seguro</span>
@@ -109,7 +113,7 @@ export function Footer(props: FooterProps) {
                   <li>
                     <button
                       type="button"
-                      className="flex w-[214px] items-center gap-2 bg-gray-600 px-8 py-1 text-base uppercase text-gray-300"
+                      className="flex w-[214px] items-center gap-2 bg-gray-600 px-8 py-1 text-base uppercase text-gray-50"
                     >
                       <FaExpeditedssl size={20} />
                       <span className="text-xs"> certificado ssl</span>
@@ -129,13 +133,13 @@ export function Footer(props: FooterProps) {
           </div>
         </div>
 
-        <div className="mx-auto max-w-7xl flex-col gap-4  px-4 py-6 text-gray-200 dark:text-gray-300 md:flex md:items-center md:justify-center">
-          <p className="text-center text-sm ">
+        <div className="mx-auto max-w-7xl flex-col gap-4  px-4 py-6 text-gray-50 md:flex md:items-center md:justify-center">
+          <p className="text-center text-sm">
             Copyright{" "}
             <a href="https://aedigi.com.br">&copy;AE Digi Solutions</a>. Todos
             os direitos reservados.
           </p>
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-gray-300">
             Todo o conteúdo do site, todas as fotos, imagens, logotipos, marcas,
             layout, aqui veículados são de propriedade exclusiva. É vedada
             qualquer reprodução, total ou parcial, de qualquer elemento de
@@ -151,7 +155,7 @@ export function Footer(props: FooterProps) {
       </div>
       <Link
         type="button"
-        className="fixed bottom-8 right-8 mb-2 rounded-full bg-gradient-to-r from-green-400 via-green-500 to-green-600 p-4 text-center text-sm font-medium text-white hover:bg-gradient-to-br  focus:outline-none focus:ring-4 focus:ring-green-300 dark:focus:ring-green-800"
+        className="fixed bottom-8 right-8 mb-2 rounded-full bg-gradient-to-r from-green-400 via-green-500 to-green-300 p-4 text-center text-sm font-medium text-white hover:bg-gradient-to-br  focus:outline-none focus:ring-4 focus:ring-green-300 dark:focus:ring-green-800"
         onClick={() =>
           window.open(
             "https://api.whatsapp.com/send?phone=5519993028888&text=Olá, sou você, gostaria de saber mais sobre o SB2 Turbo?",
