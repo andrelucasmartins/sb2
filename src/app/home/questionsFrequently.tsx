@@ -18,22 +18,17 @@ interface QuestionsFrequentlyProps {}
 
 export const QuestionsFrequently = (props: QuestionsFrequentlyProps) => {
   return (
-    <section className="py-16 bg-secondary">
+    <section className="bg-secondary py-16">
       <div className="mx-auto max-w-7xl space-y-6 px-4 sm:px-0">
-        <p className="text-md px-2 text-center text-primary">
+        <p className="text-md px-2 text-center font-semibold text-red-600">
           ALGUMA DÚVIDA? VEJA ABAIXO OU NOS MANDE UMA MENSAGEM!
         </p>
-        <h1 className="text-center  text-4xl font-bold">
-          Dúvidas Frequentes:
-        </h1>
-        <div className="grid w-full grid-cols-1 md:grid-cols-2 items-start gap-4">
+        <h1 className="text-center  text-4xl font-bold">Dúvidas Frequentes:</h1>
+        <div className="grid w-full grid-cols-1 items-start gap-4 md:grid-cols-2">
           {QUESTIONS?.map((question) => (
             <Collapsible key={question.id}>
-              <CollapsibleTrigger
-                asChild
-                className="flex items-center justify-between rounded-b-md bg-primary p-4"
-              >
-                <div>
+              <CollapsibleTrigger className="flex items-center justify-between rounded-b-md bg-primary p-4 w-full">
+                <>
                   <h2 className="text-sm font-semibold text-white">
                     {question.question}
                   </h2>
@@ -41,9 +36,9 @@ export const QuestionsFrequently = (props: QuestionsFrequentlyProps) => {
                     <FaSquareFull className="size-3 text-white" />
                     <span className="sr-only">Toggle</span>
                   </div>
-                </div>
+                </>
               </CollapsibleTrigger>
-            <CollapsibleContent className="mx-4 space-y-2 has-[data-state=open]:animate-accordion-down has-[data-state=closed]:animate-accordion-up">
+              <CollapsibleContent className="mx-4 space-y-2 has-[data-state=closed]:animate-accordion-up has-[data-state=open]:animate-accordion-down">
                 <div className="rounded-ee-md border bg-white px-4 py-3 font-mono text-sm ">
                   {question.answer}
                 </div>
