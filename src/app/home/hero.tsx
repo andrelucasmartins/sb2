@@ -11,30 +11,32 @@ interface HeroProps {
 export const Hero = ({ url = "#products" }:HeroProps) => {
   return (
     <section className="bg-black text-white">
-      <div className=" flex h-min  w-full flex-col gap-y-6 bg-[url('/QUER-EMAGRECER-sibutran2-1024x636-1.avif')] bg-cover bg-no-repeat px-4 py-6">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center justify-center space-y-4 text-center">
+      <div className=" flex  w-full flex-col gap-y-6 bg-[url('/QUER-EMAGRECER-sibutran2-1024x636-1.avif')] bg-cover bg-center bg-no-repeat px-4 py-6">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center text-center sm:mb-24 sm:justify-center sm:space-y-10">
           <h1 className="mx-auto text-2xl font-bold md:text-4xl">
             <Image
               src="/Ativo-1.webp"
-              width={100}
-              height={100}
+              width={115}
+              height={72}
               alt="SB2 Turbo"
             />
           </h1>
-          <h2 className="text-2xl font-bold md:text-4xl">
-            RECUPERE SUA AUTO ESTIMA E SAÚDE
-            <br /> SEM DIETAS MALUCAS E EXERCÍCIOS CANSATIVOS
-          </h2>{" "}
-          <p className="text-xl md:text-3xl">
-            Conheça o suplemento que já ajudou mais de 82 mil pessoas de todas
-            <br />
-            as idades a recuperarem a autoestima e saúde com apenas duas
-            cápsulas ao dia!
-          </p>
-        </div>
-        <iframe
-          src="https://www.youtube.com/embed/UxsSCJxre10?si=W_1PxXMM8r2195FI&autoplay=1"
-          srcDoc="
+          <div className="flex flex-col gap-2">
+            <h2 className="text-xl font-bold md:text-4xl">
+              RECUPERE SUA AUTO ESTIMA E SAÚDE
+              <br /> SEM DIETAS MALUCAS E EXERCÍCIOS CANSATIVOS
+            </h2>{" "}
+            <p className="text-md md:text-3xl">
+              Conheça o suplemento que já ajudou mais de 82 mil pessoas de todas
+              <br />
+              as idades a recuperarem a autoestima e saúde com apenas duas
+              cápsulas ao dia!
+            </p>
+          </div>
+
+          <iframe
+            src="https://www.youtube.com/embed/UxsSCJxre10?si=W_1PxXMM8r2195FI&autoplay=1"
+            srcDoc="
             <style>
             * {
               padding:0;
@@ -79,26 +81,27 @@ export const Hero = ({ url = "#products" }:HeroProps) => {
     </svg>
               </a>
               "
-          title="YouTube video Veja como o Lift Detox Black é fabricado"
-          frameBorder="0"
-          width={"100%"}
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          loading="lazy"
-          className="left-0 top-0 mx-auto mt-4 flex aspect-square h-96 justify-center rounded-md border-0 border-secondary text-center sm:max-w-2xl md:aspect-video
+            title="YouTube video Veja como o Lift Detox Black é fabricado"
+            frameBorder="0"
+            width={"100%"}
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            loading="lazy"
+            className="left-0 top-0 mx-auto mt-4 flex aspect-square h-96 justify-center rounded-md border-0 border-secondary text-center sm:max-w-2xl md:aspect-video
           "
-        />
-        <Button
-          className="mx-auto my-4 w-fit bg-gradient-to-l from-orange-500 to-red-700 px-10  py-6 text-center sm:text-xl  font-medium uppercase text-white"
-          asChild
-        >
-          <Link
-            href={`/${url}`}
-            title="Sim, eu quero um emagrecimento saudável!"
+          />
+          <Button
+            className="mx-auto my-4 w-fit bg-gradient-to-l from-orange-500 to-red-700 px-10  py-6 text-center font-medium  uppercase text-white sm:text-xl"
+            asChild
           >
-            Eu quero um emagrecimento saudável
-          </Link>
-        </Button>
+            <Link
+              href={`/${url}`}
+              title="Sim, eu quero um emagrecimento saudável!"
+            >
+              Eu quero um emagrecimento saudável
+            </Link>
+          </Button>
+        </div>
       </div>
       <div className="sr-only mx-auto grid max-w-7xl grid-cols-1 items-center justify-center py-10 md:grid-cols-2">
         <div>
@@ -112,8 +115,6 @@ export const Hero = ({ url = "#products" }:HeroProps) => {
             width={640}
             height={624}
           />
-
-          asdasdasasdasd
         </div>
         <div className="flex flex-col justify-center sm:items-start sm:justify-start">
           <h1 className="invisible text-start text-4xl/10  font-bold text-primary sm:visible">
@@ -138,10 +139,12 @@ export const Hero = ({ url = "#products" }:HeroProps) => {
             Sim, eu quero um emagrecimento saudável!
           </Link>
 
-          <img
+          <Image
             src="/checkout_2-1.webp"
             alt="Checkout Seguro"
             className="mx-auto my-6 w-full max-w-[340px]"
+            width={340}
+            height={340}
           />
         </div>
       </div>

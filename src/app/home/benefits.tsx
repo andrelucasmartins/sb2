@@ -12,7 +12,7 @@ interface BenefitsProps {}
 
 export const Benefits = (props: BenefitsProps) => {
   return (
-    <section className="bg-[url(/black-and-chalkboard-wall-texture-background-1.jpg)] bg-cover  bg-no-repeat px-4 pb-2 pt-16 text-white">
+    <section className="bg-[url(/black-and-chalkboard-wall-texture-background-1.avif)] bg-cover  bg-no-repeat px-4 pb-2 pt-16 text-white">
       <div className="min-h-svh bg-[url(/SB2-SITE-IMAGES-420-x-420-px.avif)] bg-[length:620px_620px] bg-left-bottom bg-no-repeat">
         <div className="mx-auto grid max-w-7xl grid-cols-1  px-4 pt-16 md:grid-cols-2 md:gap-16 md:px-0">
           <div className="flex flex-col">
