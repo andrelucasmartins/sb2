@@ -1,4 +1,3 @@
-"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -106,11 +105,15 @@ export const Hero = ({ url = "#products" }:HeroProps) => {
           <h1 className="px-12 text-center text-2xl font-bold text-primary sm:invisible">
             Confira as ofertas
           </h1>
-          <img
+          <Image
             src="/mockup-sibutran2-oficial-flag-drt-16-05-22-768x624.webp"
             alt="Sibutran2"
             className="mx-auto my-6 w-full max-w-[640px]"
+            width={640}
+            height={624}
           />
+
+          asdasdasasdasd
         </div>
         <div className="flex flex-col justify-center sm:items-start sm:justify-start">
           <h1 className="invisible text-start text-4xl/10  font-bold text-primary sm:visible">
