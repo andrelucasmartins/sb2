@@ -20,14 +20,14 @@ export const QuestionsFrequently = (props: QuestionsFrequentlyProps) => {
   return (
     <section className="bg-secondary py-16">
       <div className="mx-auto max-w-7xl space-y-6 px-4 sm:px-0">
-        <h6 className="text-base px-2 text-center font-semibold  text-red-700">
+        <h2 className="px-2 text-center text-base font-semibold  text-red-700">
           ALGUMA DÚVIDA? VEJA ABAIXO OU NOS MANDE UMA MENSAGEM!
-        </h6>
-        <h1 className="text-center  text-4xl font-bold">Dúvidas Frequentes:</h1>
+        </h2>
+        <h3 className="text-center  text-4xl font-bold">Dúvidas Frequentes:</h3>
         <div className="grid w-full grid-cols-1 items-start gap-4 md:grid-cols-2">
           {QUESTIONS?.map((question) => (
             <Collapsible key={question.id}>
-              <CollapsibleTrigger className="flex items-center justify-between rounded-b-md bg-primary p-4 w-full">
+              <CollapsibleTrigger className="flex w-full items-center justify-between rounded-b-md bg-primary p-4">
                 <>
                   <h2 className="text-sm font-semibold text-white">
                     {question.question}
