@@ -20,7 +20,7 @@ export const QuestionsFrequently = (props: QuestionsFrequentlyProps) => {
   return (
     <section className="bg-secondary py-16">
       <div className="mx-auto max-w-7xl space-y-6 px-4 sm:px-0">
-        <h6 className="text-md px-2 text-center font-medium  text-red-700">
+        <h6 className="text-base px-2 text-center font-semibold  text-red-700">
           ALGUMA DÚVIDA? VEJA ABAIXO OU NOS MANDE UMA MENSAGEM!
         </h6>
         <h1 className="text-center  text-4xl font-bold">Dúvidas Frequentes:</h1>
