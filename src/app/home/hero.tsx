@@ -11,8 +11,21 @@ interface HeroProps {
 export const Hero = ({ url = "#products" }:HeroProps) => {
   return (
     <section className="bg-black text-white">
-      <div className=" flex  w-full flex-col gap-y-6 bg-[url('/QUER-EMAGRECER-sibutran2-1024x636-1.avif')] bg-cover bg-center bg-no-repeat px-4 py-6">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center text-center sm:mb-24 sm:justify-center sm:space-y-10">
+      <div className=" relative  flex w-full flex-col  gap-y-6">
+        <Image
+          src="/QUER-EMAGRECER-sibutran2-1024x636-1.avif"
+          alt="Quer Emagrecer Sibutran2"
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          width={500}
+          height={300}
+          priority
+          className="absolute inset-0 w-full min-h-full object-cover"
+        />
+        <div className="z-0 mx-auto grid max-w-7xl grid-cols-1 items-center px-4 py-6 text-center sm:mb-32 sm:justify-center sm:space-y-10">
           <h1 className="mx-auto text-2xl font-bold md:text-4xl">
             <Image
               src="/Ativo-1.webp"
