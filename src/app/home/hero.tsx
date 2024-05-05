@@ -21,6 +21,7 @@ export const Hero = ({ url = "#products" }:HeroProps) => {
             height: "100%",
           }}
           priority
+          loading="eager"
           fill
           className="absolute inset-0 w-full min-h-full object-cover"
         />
