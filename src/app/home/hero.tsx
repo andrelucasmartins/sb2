@@ -18,11 +18,10 @@ export const Hero = ({ url = "#products" }:HeroProps) => {
           sizes="100vw"
           style={{
             width: "100%",
-            height: "auto",
+            height: "100%",
           }}
-          width={450}
-          height={300}
           priority
+          fill
           className="absolute inset-0 w-full min-h-full object-cover"
         />
         <div className="z-0 mx-auto grid max-w-7xl grid-cols-1 items-center px-4 py-6 text-center sm:mb-32 sm:justify-center sm:space-y-10">
