@@ -20,7 +20,7 @@ export const Hero = ({ url = "#products" }:HeroProps) => {
             width: "100%",
             height: "auto",
           }}
-          width={500}
+          width={450}
           height={300}
           priority
           className="absolute inset-0 w-full min-h-full object-cover"
