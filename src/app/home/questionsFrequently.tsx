@@ -1,10 +1,4 @@
-"use client";
-
 import { QUESTIONS } from "@/data/questions";
-
-
-
-
 
 import {
   Collapsible,

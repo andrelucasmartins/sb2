@@ -8,13 +8,16 @@ import { Hero } from "./home/hero";
 import { Products } from "./home/products";
 import { Promotion } from "./home/promotion";
 
+import { Suspense } from "react";
 import { QuestionsFrequently } from "./home/questionsFrequently";
 import { SafeBuy } from "./home/safe-buy";
 import { Safeguard } from "./home/safeguard";
 export default function Home() {
   return (
     <main className="min-w-full">
+      <Suspense>
       <Hero />
+      </Suspense>
       <Depositions />
       <CaseSuccess />
       <Benefits />
