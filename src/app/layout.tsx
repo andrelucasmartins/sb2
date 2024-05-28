@@ -57,6 +57,13 @@ export default function RootLayout({
           <NavbarMain />
         </div>
         {children}
+        <iframe
+          className="opacity-0"
+          src="https://app.monetizze.com.br/r/AJH15065284?u=c&pl=SN184211"
+          width="1"
+          height="1"
+          scrolling="no"
+        ></iframe>
       </body>
     </html>
   );
