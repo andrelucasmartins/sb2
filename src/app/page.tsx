@@ -1,17 +1,17 @@
 import { Footer } from "@/components/footer";
 import { TermsModalContextProvider } from "@/contexts/TermsContext";
-import { Benefits } from "./home/benefits";
-import { CaseSuccess } from "./home/caseSuccess";
-import { Depositions } from "./home/depositions";
-import { FormulaPotential } from "./home/formula-potential";
-import { Hero } from "./home/hero";
-import { Products } from "./home/products";
-import { Promotion } from "./home/promotion";
+import { Benefits } from "./(home)/benefits";
+import { CaseSuccess } from "./(home)/caseSuccess";
+import { Depositions } from "./(home)/depositions";
+import { FormulaPotential } from "./(home)/formula-potential";
+import { Hero } from "./(home)/hero";
+import { Products } from "./(home)/products";
+import { Promotion } from "./(home)/promotion";
 
 import { Suspense } from "react";
-import { QuestionsFrequently } from "./home/questionsFrequently";
-import { SafeBuy } from "./home/safe-buy";
-import { Safeguard } from "./home/safeguard";
+import { QuestionsFrequently } from "./(home)/questionsFrequently";
+import { SafeBuy } from "./(home)/safe-buy";
+import { Safeguard } from "./(home)/safeguard";
 export default function Home() {
   return (
     <main className="min-w-full">
